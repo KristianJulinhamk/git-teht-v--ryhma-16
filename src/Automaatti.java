@@ -42,6 +42,11 @@ public class Automaatti {
 
             case 3:                             // CASE 3. Lopetus. EXIT
             System.exit(0); 
+
+            default: // Mikäli valinta ei ole 1, 2 tai 3
+                System.out.println("Virheellinen valinta! Anna numero 1, 2 tai 3");
+                System.out.println("");
+                break;
             }
         }  
     }  
