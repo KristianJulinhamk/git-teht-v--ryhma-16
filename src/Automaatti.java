@@ -1,5 +1,5 @@
 import java.util.Scanner;  
-  
+
 public class Automaatti {
     public static void main(String args[] ) {
         //tilin saldo :(
@@ -15,36 +15,37 @@ public class Automaatti {
               
             //ottaa vaihtoehdon minkä käyttäjä laittaa
             int vaihtoehto = sc.nextInt();
+
             switch(vaihtoehto) {
-                case 1:
-        System.out.print("Kuinka paljon haluat nostaa rahaa?");
+            case 1:
+            System.out.print("Kuinka paljon haluat nostaa rahaa?");
                       
-        //ottaa noston
-        withdraw = sc.nextInt();
+            //ottaa noston
+            withdraw = sc.nextInt();
                       
-        //katotaan että riittääkö fyrkka
-        if(balance >= withdraw) {  
+            //katotaan että riittääkö fyrkka
+            if(balance >= withdraw) {  
             //poistaa nostomäärän saldosta 
             balance = balance - withdraw;  
             System.out.println("Ottakaa rahanne");
-        } 
-        else {  
+            } 
+            else {  
             //error viesti 
             System.out.println("Ei riitä rahat :(");
-        }  
-        System.out.println("");  
-        break;
-
-                case 2:
-        //nayttaa tilin saldon
-        System.out.println("Tilin saldo: "+balance);
-        System.out.println("");
-        break;
-   
-                case 3:
-        //exit
-        System.exit(0);
             }  
+            System.out.println("");  
+            break;
+
+            case 2:
+            //nayttaa tilin saldon
+            System.out.println("Tilin saldo: "+balance);
+            System.out.println("");
+            break;
+   
+            case 3:
+            //exit
+            System.exit(0); }
+              
         }  
     }  
 }
